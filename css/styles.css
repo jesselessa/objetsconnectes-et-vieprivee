@@ -1,0 +1,570 @@
+/* GENERAL */
+/* Police */
+@import url('https://fonts.googleapis.com/cspartout?family=Poppins:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap');
+/* Padding et marges par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Font-size et font-family par défaut */
+html{
+  /* taille par défaut navigateur = 16px = 100% */
+  /* 10px = 62.5% = 1rem */
+  font-size:62.5%;
+}
+body{
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+/* Images */
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Liens */
+a{
+  text-decoration: none;
+}
+/* Blocs */
+section, #numbers, #pratiques, .sources, footer{
+  width: 100vw;
+  max-width: 100%;
+}
+section{
+  margin-bottom: 5rem;
+}
+.everywhere-box,.intimacy-box,.data-box,.vulnerable-box,.protection-box{
+  display: flex;
+}
+article, .img-box{
+  width: 50%;
+  flex: 1;
+}
+article{
+  text-align: justify;
+  background: #ebe9b2;
+}
+h2, h3{
+  color:#0f6464;
+  margin-top: 2rem;
+}
+h2{
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+h3{
+  font-size: 3.2rem;
+}
+p{
+  padding: 1rem 2rem;
+}
+/* Exposants - notes de bas de page */
+sup{
+  color: #4bb74b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#numbers sup, #pratiques sup{
+    font-size: 1.5rem;
+}
+.everywhere-box .def, .ref{
+  font-size:1.4rem;
+  margin-top:1rem;
+}
+.ref{
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+  padding: 0 0 1rem 1rem;
+}
+/* Bordures */
+.border-top{
+  background: #0f6464;
+  box-sizing :border-box;
+  height: 1rem;
+  margin-bottom: 2rem;
+  padding:0;
+  width: 20%;
+}
+.border-bottom{
+  width: 25%;
+  height: 1rem;
+  margin-left: 76%;
+  background: #0f6464;
+}
+#everywhere, .numbers, #intimacy, #data, #vulnerable, #protection, #pratiques, .sources{
+  border-right: 1rem solid #0f6464 ;
+}
+
+/* BOUTON ASCENSEUR */
+#button-top {
+  display: none; /* Caché par défaut */
+  position: fixed; /* Position fixe */
+  bottom: 10%; 
+  right: 1.5%;
+  z-index: 100; /* Pas de chevauchement */
+  cursor: pointer; /* Ajoute un pointeur de souris en :hover */
+}
+.fa-chevron-circle-up{
+  color: #0f6464;
+  font-size: 4rem;
+}
+.fa-chevron-circle-up:hover{
+  color: #4bb74b;
+}
+.fa-chevron-circle-up:active{
+  color: orange;
+}
+
+/* HOMEPAGE - SECTION 1 */
+.homepage{
+  position:relative;
+  background:url("../images/bg1.png") no-repeat center/cover;
+  height: 100vh;
+  margin:0;
+  border:none;
+  animation: slideshowBg 20s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+}
+/* Animation images en bg */
+@keyframes slideshowBg {    
+    0%{
+        background: url("../images/bg1.png") no-repeat center/cover, url("../images/bg2.png") no-repeat center/cover;
+    }
+    33%{
+        background: url("../images/bg2.png") no-repeat center/cover, url("../images/bg3.png") no-repeat center/cover;
+    }
+    66%{
+        background: url("../images/bg3.png") no-repeat center/cover, url("../images/bg4.png") no-repeat center/cover;
+    }
+    100%{
+        background: url("../images/bg4.png") no-repeat center/cover, url("../images/bg1.png") no-repeat center/cover;
+    }
+}
+/* Titre */
+.main-title{
+  position:absolute;
+  width:90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 0.4rem 0.3rem 0.3rem #0f6464;
+}
+/* Navbar */
+ /* En CSS, une variable se déclare comme une propriété classique mais avec -- en préfixe ;
+la fonction var () fait référence à notre variable */
+.navbar-var {
+  --navbar-color: #FFF;
+  --navbar-bg-color: #0f6464;  
+}
+.navbar { 
+  padding:1rem;
+  font-size:1.4rem;
+  height: auto;
+  background:var(--navbar-bg-color);
+  color:var(--navbar-color);
+}
+.navbar-links { 
+  display:flex;
+  justify-content:space-around;
+  list-style-type: none; 
+}
+.navbar-link { 
+  padding: 0 0.5rem;
+}
+.navbar-link > a { 
+  color:var(--navbar-color);
+  text-decoration:none;
+}
+.burger {
+  display:none;
+}
+
+/* SECTION 2 - PARTOUT */
+.everywhere-box article{
+  margin-right: 0.5rem;
+}
+.everywhere-box .img-box{
+  margin-left: 0.5rem;
+}
+.everywhere-box article span{
+  font-style: italic;
+}
+.everywhere-box a{
+  color: #0f6464;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+.everywhere-box a:hover{
+  color:orange;
+}
+
+/* NUMBERS */
+#numbers{
+  margin-bottom: 5rem;
+  border: 1rem solid #0f6464;
+}
+#numbers h2{
+  margin-bottom: 2rem;
+}
+.numbers-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+  gap: 1.5rem;
+}
+.number{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+  line-height: 1;
+}
+.number i{
+  color: #0f6464;
+  font-size: 4.2rem ;
+}
+ .number p{
+   padding: 1rem 0;
+}
+
+/* SECTION 3 - DONNÉES INTIMES */
+.intimacy-box .img-box{  
+  margin-right: 0.5rem;
+}
+.intimacy-box article{
+  margin-left: 0.5rem;
+}
+/* SECTION 4 - DATA */
+.data-box .img-box{
+  margin-left: 0.5rem;
+}
+.data-box article{
+  margin-right: 0.5rem;
+}
+
+/* SECTION 5 - OBJETS VULNÉRABLES */
+.vulnerable-box .img-box{
+  margin-right: 0.5rem;
+}
+.vulnerable-box article{
+  margin-left: 0.5rem;
+}
+
+/* SECTION 6 - SE PROTÉGER */
+.protection-box .img-box{  
+  margin-left: 0.5rem;
+}
+.protection-box article{
+  margin-right: 0.5rem;
+}
+.info{
+color:#4bb74b;
+}
+.info-plus{
+  color: #0f6464;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+.protection-box a:hover{
+  color:orange;
+}
+
+/* PRATIQUES ET SOURCES */
+#pratiques, .sources{
+  padding: 1rem;
+}
+#pratiques{
+  border: 1rem solid #0f6464;
+}
+#pratiques ul, .sources ul{
+  list-style:inside;
+  margin-bottom: 2rem;
+}
+#pratiques ul li{
+  line-height: 2;
+}
+.sources{
+  padding-bottom: 3rem;
+  border-right: none;
+}
+.sources a{
+  color: black;
+  text-decoration: underline;
+  line-height: 2;
+}
+.sources a:hover{
+  color: #4bb74b;
+}
+/* FOOTER */
+footer{
+  background: #0f6464;
+  color: white;
+  padding:3rem 2rem;
+  line-height: 2;
+}
+footer i{
+  margin-right: 0.5rem;
+}
+footer i:hover, footer a:hover{
+  color:#ebe9b2;
+}
+footer a {
+  color:white;
+  text-decoration: underline;
+}
+footer p{
+  text-align: center;
+}
+.mail-portfolio{
+  margin-right: 5rem;
+}
+#contact{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+/******** MEDIA QUERIES ************/
+@media only screen and (max-width: 592px){
+  /* Image accueil en bg */
+  .homepage {    
+    background: url("../images/bg-mob.jpg") no-repeat center/cover;
+    animation: none;
+  }
+}
+
+@media only screen and (max-width: 766px){ 
+  /* Bouton ascenseur */
+  #button-top{
+    bottom: 11%;
+    right: 4%;
+  }
+  /* Navbar */
+  .navbar{
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  /* Marges des blocs et bordures*/
+  section, #numbers{
+    margin-bottom: 2.5rem;
+  }
+  .border-top, .border-bottom{
+    width: 50%;
+  }
+  .border-bottom{
+    margin-left: 51%;
+  }  
+  /* Titres */
+  .main-title{
+    font-size: 3rem;
+  }
+  h2{
+    text-align: center;
+    font-size: 2.2rem;
+    padding-left: 0;
+  }
+  /* Disposition des blocs */
+  .numbers-box{
+    flex-direction: column;
+  }
+  .number{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .number i{
+    font-size: 5rem;
+  }
+  #pratiques{
+    font-size: 1.4rem;
+  }
+  #pratiques ul{
+    margin-bottom: 0;
+  } 
+  #numbers, #pratiques, #pratiques ul, .sources, .sources ul{
+    padding:1rem;
+  }
+  footer{
+    padding: 1rem;
+  }
+  .mail-portfolio{
+    margin-right: 0;
+  }
+  footer i{
+    margin-right: 0.5rem;
+  }
+  footer p{
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width:1219px){
+  /* Navbar */
+  .navbar{
+    font-size: 1.8rem;
+  }
+  /* Titre principal */
+  .main-title{
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width:1220px) {
+  /* Dispositions des blocs */
+  .everywhere-box, .data-box, .protection-box{
+    flex-direction:column-reverse;
+  }
+  .intimacy-box,.vulnerable-box{
+    flex-direction:column;
+  }  
+  article, .img-box{
+    width: 100%;
+  }
+  .everywhere-box .img-box, .intimacy-box article, .data-box .img-box, .vulnerable-box article, .protection-box .img-box{
+    margin-left: 0;
+  }  
+  /* Navbar et menu burger */
+  .navbar{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }  
+  .navbar-links { 
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    width:0;
+    height: 88vh;
+    /* height:calc(100vh - hauteur navbar); */
+    position:absolute;
+    top: 12vh;
+    /* on le fixe par rapport à la hauteur de la navbar */
+    right:0;     
+    background: #0f6464;     
+    transform: translateX(110%);
+    z-index: 100;
+    transition: all .5s ease-in-out;
+  }
+  .show-nav .navbar-links {     
+    width:100vw;    
+    transform: translateX(0);
+  } 
+  .navbar-link {    
+    transform: translateX(101%);
+    transition: all .5s ease-in-out;
+  }  
+  .show-nav .navbar-link  {        
+    transform: translateX(0);    
+  }
+  .navbar-link > a {
+    display:block;
+    padding:1rem;
+    color: white; 
+    text-align: center; 
+    transition: all .4s ease-in-out;
+  }
+  .navbar-link > a:hover {
+    padding-left:2rem;
+    letter-spacing:0.5rem;
+  } 
+  .burger {
+    display:block;
+    position:relative;
+    width:4.5rem;
+    height:4.5rem;
+    border:none;
+    background:transparent;
+    cursor:pointer;
+  }
+  .bar{
+    display:block;    
+    width:4.5rem;
+    height:0.4rem;  
+    border-radius:0.3rem;
+    background:white; 
+    transition: all .5s ease-in-out;   
+  }
+  .bar::before, .bar::after {
+    content:"";
+    width:4.5rem;
+    height:0.4rem;
+    position:absolute; 
+    left:0;  
+    background:white; 
+    border-radius:0.3rem;    
+    transition: all .5s ease-in-out;
+  }
+  .bar::before {
+    transform:translateY(-1.2rem);
+  }
+  .bar::after {
+    transform:translateY(1.2rem);
+  }
+  .show-nav .bar {
+    width:0;
+    background:transparent;    
+  }
+  .show-nav .bar::before {
+    transform:rotate(45deg);
+  }
+  .show-nav .bar::after {
+    transform:rotate(-45deg);
+  }
+  /* Bonus - Animations des liens de la navbar */
+  .show-nav .first {      
+    transition: all 1s ease-out;
+  }
+  .show-nav .second {      
+    transition: all 1.1s ease-out;
+  } 
+  .show-nav .third {      
+    transition: all 1.2s ease-out;
+  } 
+  .show-nav .fourth {      
+    transition: all 1.3s ease-out;
+  } 
+  .show-nav .fifth {      
+    transition: all 1.4s ease-out;
+  }
+  .show-nav .sixth {      
+    transition: all 1.5s ease-out;
+  }
+  /* Footer */
+  #contact{
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 2;
+  }
+}
+
+/* Media queries pour moyens écrans - Bonus */
+@media only screen and (min-width:1220px) {
+  /* Animation du trait sous .navbar-link */
+  .navbar-link > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 0.1rem;
+    background: var(--navbar-color);
+    transition: width .4s;
+  }
+  .navbar-link:hover > a::after {
+    width: 100%;
+  }
+}
