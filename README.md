@@ -1,6 +1,6 @@
 # objetsconnectes-et-vieprivee
 
-Salut tout le monde ! Bienvenue sur mon site web "Objets Connectés et Vie Privée à l'Ère du Numérique". Je suis Jessica Elessa, et j'ai créé ce projet dans le cadre de ma première certification en développement web chez Simplon. L'objectif était de sensibiliser le public à l'impact croissant des objets connectés sur la vie privée à l'ère du numérique. Vous pouvez explorer le site web [ici](https://jesselessa.github.io/objetsconnectes-et-vieprivee/).
+Salut tout le monde ! Bienvenue sur mon site web "Objets Connectés et Vie Privée à l'Ère du Numérique". Je suis Jessica Elessa, et j'ai créé ce projet dans le cadre de ma première certification en développement web chez Simplon. L'objectif est de sensibiliser le public à l'impact croissant des objets connectés sur la vie privée à l'ère du numérique. Vous pouvez explorer le site web [ici](https://jesselessa.github.io/objetsconnectes-et-vieprivee/).
 
 ## Table des matières
 1. [Technologies utilisées](#technos)
@@ -57,8 +57,9 @@ La section "Sources" répertorie diverses références, notamment des sites web 
 
 Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) ou [GitHub](https://github.com/jesselessa).
 
+---
+
 &copy; 2021, Jessica ELESSA - Tous droits réservés
 
-N'hésitez pas à explorer ce site informatif et à approfondir votre compréhension des enjeux liés aux objets connectés et à la vie privée à l'ère du numérique.
 
 
