@@ -55,7 +55,7 @@ La section "Sources" répertorie diverses références, notamment des sites web 
 
 ## Contact <a name="contact"></a>
 
-Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/) ou [GitHub](https://github.com/jesselessa).
+Pour toute question ou interaction, n'hésitez pas à me contacter via [LinkedIn](https://www.linkedin.com/in/jessica-elessa/).
 
 ---
 
