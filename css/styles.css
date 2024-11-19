@@ -135,13 +135,36 @@ sup {
   position: relative;
   background: url("../images/bg1.png") no-repeat center/cover;
   height: 100vh;
-  margin: 0;
   border: none;
   animation: slideshowBg 20s linear infinite 0s;
   animation-timing-function: ease-in-out;
 }
 /* Animation images en bg */
 @keyframes slideshowBg {
+  0% {
+    background: url("../images/bg1.png") no-repeat center/cover,
+      url("../images/bg2.png") no-repeat center/cover;
+  }
+  25% {
+    background: url("../images/bg2.png") no-repeat center/cover,
+      url("../images/bg3.png") no-repeat center/cover;
+  }
+  50% {
+    background: url("../images/bg3.png") no-repeat center/cover,
+      url("../images/bg4.png") no-repeat center/cover;
+  }
+  75% {
+    background: url("../images/bg4.png") no-repeat center/cover,
+      url("../images/bg1.png") no-repeat center/cover;
+  }
+  100% {
+    background: url("../images/bg1.png") no-repeat center/cover,
+      url("../images/bg1.png") no-repeat center/cover;
+  }
+}
+
+/* Animation en version mobile */
+@keyframes slideshowBgMob {
   0% {
     background: url("../images/bg1.png") no-repeat center/cover,
       url("../images/bg2.png") no-repeat center/cover;
@@ -357,14 +380,6 @@ footer p:hover {
 }
 
 /*! ******* MEDIA QUERIES ************/
-@media only screen and (max-width: 592px) {
-  /* Image accueil en bg */
-  .homepage {
-    background: url("../images/bg-mob.jpg") no-repeat center/cover;
-    animation: none;
-  }
-}
-
 @media only screen and (max-width: 766px) {
   /* Bouton ascenseur */
   #button-top {
